@@ -1,0 +1,76 @@
+/* En-tête */
+header {
+    background-color: #6c7a84; /* Couleur bleu turquoise */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif; /* Police plus moderne */
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2em; /* Taille de police plus grande */
+  }
+  
+  /* Contenu principal */
+  main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Couleur de fond gris clair */
+  }
+  
+  /* Galerie */
+  .galerie {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 40px; /* Marge plus importante */
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  li {
+    margin: 15px; /* Marge plus espacée */
+    width: 320px; /* Ajustement de la largeur */
+    background-color: #fff; /* Fond blanc pour chaque élément */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 20px; /* Padding intérieur */
+    text-align: center;
+  }
+  
+  
+  img {
+    width: 100%; /* Conserve la largeur */
+    height: 250px; /* Hauteur plus importante */
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    margin-top: 10px;
+    font-size: 1.2em; /* Taille de police légèrement plus grande */
+  }
+  
+  p {
+    margin-bottom: 10px;
+    font-size: 0.9em; /* Taille de police plus petite pour une meilleure lisibilité */
+  }
+  /* Add animations */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  section {
+    animation: fadeIn 1s ease-in-out;
+  }

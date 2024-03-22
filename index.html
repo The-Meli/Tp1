@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Mes débuts avec la Programmation Web</title>
+  </head>
+
+  <body>
+    <div id="navigation">
+      <ol>
+        <li><a href="#s1">Informations du Candidat</a></li>
+        <li><a href="#s2">Cursus</a></li>
+        <li><a href="#s3">Languages de programmation</a></li>
+        <li><a href="#s4">Exercice </a></li>
+      </ol>
+    </div>
+
+    <section id="s1">
+        <fieldset>
+          <legend><strong>Informations Personnelles du Candidat</strong></legend>
+  
+          <label for="Nom"><strong>Nom:</strong></label>
+          <input type="text" placeholder="Votre nom" />
+      
+          <label for="Prenom"><strong>Prénom:</strong></label>
+          <input type="text" placeholder="Votre prénom" />
+  
+          <label for="Date de naissance"> 
+          <strong>Date de naissance:</strong></label>
+          <input type="date" />
+  
+          <label id="adr" for="Adresse email">
+          <strong>Adresse email:</strong></label>
+          <input id="email" placeholder="Votre adresse email" />
+  
+          <label for="Numero de telephone">
+          <strong>Numéro de téléphone:</strong></label>
+          <input type="tel" placeholder="Votre Numero de téléphone"/>
+  
+          <label for="Situation familiale">
+          <strong>Situation familiale:</strong></label>
+
+          <select>
+            <option value="celibataire">Célibataire</option>
+            <option value="marie">Marié(e)</option>
+          </select>
+
+        </fieldset>
+    </section>
+
+   <section id="s2">
+     <fieldset>
+      <legend><strong>Cursus</strong></legend>
+          <ol>
+              <h3><li>Cycle Primaire</li> </h3>  
+                      <ul>
+                        <li><label for="Ecole :"><strong>Nom de l'établissement:</strong></label> </li>
+                        <input type="text" placeholder="Nom de l'etablissement" />
+
+
+                    <li><label for="Ecole :"><strong>Année de première inscription</strong></label> </li>
+                    <input type="date" />
+                  </ul>
+
+              <h3> <li>Cycle Moyen</li></h3> 
+                  <ul>
+                    <li>
+                      <label for="Ecole :"><strong>Nom de l'établissement:</strong></label>
+                      </li>
+                      <input type="text" placeholder="Nom de l'etablissement" />
+                  
+                      <li><label for="Ecole :"><strong>Année de première inscription</strong></label> </li>
+                      <input type="date"/>      
+          </ul>
+
+              <h3> <li>Cycle Secondaire</li></h3> 
+          <ul>
+        <li><label for="Ecole :"><strong>Nom de l'établissement:</strong></label> </li>
+        <input type="text" placeholder="Nom de l'etablissement" />
+
+      
+                <li><label for="Ecole :"><strong>Année de première inscription</strong></label> </li>
+                <input type="date" />
+                <li> <label for="BAC:"><strong>BAC:</strong></label></li>
+
+                <select >
+                  <option value="MATHS">Maths</option>
+                  <option value="SC">Sciences de la Nature et de la Vie </option>
+                  <option value="MT">Maths Technique (Mettre votre série)</option>
+                </select>
+              </ul>
+
+
+              <h3> <li>Cycle Universitaire</li></h3> 
+              <ul>
+                <li><label for="Ecole :"><strong>Nom de l'établissement:</strong></label> </li>
+                <input type="text" placeholder="Nom de l'etablissement" />
+
+                <li><label for="Ecole :"><strong>Année de première inscription</strong></label> </li>
+                  <input type="date" />
+                      </ul>
+                  </ol>
+                </li>
+              </section>
+              
+    <section id="s3">
+          <fieldset>
+            <legend><strong>Langages de Programmation maîtrisés</strong></legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="Java" name="Java" />
+                <label for="Java">Java</label>
+              </li>
+              <li>
+                <input type="checkbox" id="Python" name="Python" />
+                <label for="Python">Python</label>
+              </li>
+              <li>
+                <input type="checkbox" id="JavaScript" name="JavaScript" />
+                <label for="JavaScript">JavaScript</label>
+              </li>
+            </ul>
+          </fieldset>
+        </section>
+        
+      <section id="s4">
+        <fieldset>
+          <legend><strong>Exercice</strong></legend>
+          <p> Voici un exemple de code en language C permettant de remplir une matrice,calculer
+            et afficher la somme de ses elements positifs:
+          </p>
+          <pre>
+            <code>
+            <span style="color: red"> include </span> &lt;stdio.h&gt;
+            
+
+            <span style="color: red;"> int </span> main() {
+              <span style="color: red;"> int </span> lignes,colonnes,i,j,sum=0;
+                  printf("Saisir le nombre de lignes et colonnes");
+                  scanf("%d %d",&lignes,&colonnes);
+
+                  <span style="color: red;"> int </span>matrix[lignes][colonnes];
+                  printf("Saisir les elements de la matrice");
+                  <span style="color: red;"> for </span> (i = 0; i &lt; lignes; i++) {
+                    <span style="color: red;"> for </span> (j = 0; j &lt; colonnes; j++) {
+                         scanf("%d",%matrix[i][j]);
+                         <span style="color: red;"> if </span>(matrix[i][j]>0){
+                         sum += matrix[i][j]; 
+                      }
+                    }
+                  }
+                       printf("Sum of positive elements: %d\n",sum); 
+                       <span style="color: red;"> return </span> 0; 
+                      
+              }
+            </code>
+          </pre>
+          <strong>Remarque:</strong> 
+          <p>Le code d'une page web doit etre mis entre les deux balises &lt;html&gt; et &lt;/html&gt;  
+            il peut contenir du texte ou des formules mathematiques telles que : 
+            <math>
+              <mi>π</mi><mi>i</mi> <mo>=</mo> <mi>α</mi><mo>(</mo><mi>X</mi><mn>1</mn><mo>+</mo><mi>Y</mi><mn>2</mn><msup><mo>)</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>/</mo><mi>λ</mi><mi>i</mi>
+           </math>
+             </p>
+
+   </fieldset>
+      </section>
+      <section id="vacances">
+        <fieldset>
+          <legend>Vacances en Images</legend>
+          <ul>
+              <li>
+                <a href="Vacances.htm#france">
+
+               France <img src="/images/france.png" alt="france">
+              </li>
+
+              <li>
+                <a href="Vacances.htm#Japon">
+                Japon  <img src="/images/japon.png" alt="Japon">
+              </li>
+
+              <li> 
+                <a href="Vacances.htm#Italie">
+                Italie <img src="/images/italie.png" alt="Italie">
+              </li>
+
+              <li>
+                <a href="Vacances.htm#Australie">
+               Australie <img src="/images/australie.png" alt="Australie">
+              </li>
+          </ul>
+        </fieldset>
+       
+    </section>
+
+    
+      <div id="haut-de-page" style="text-align: center;">
+        <a href="#top" style="font-weight: bold;">HAUT DE PAGE</a>
+      </div>
+      
+    </body>
+</html>

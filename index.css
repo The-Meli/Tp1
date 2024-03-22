@@ -1,0 +1,149 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("./images/fond.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ /* Apply styles to the input and select*/
+ input,
+ select {
+   width: 80%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 12px;
+ }
+
+/* Apply styles to checkbox input*/
+
+input[type="checkbox"] {
+  vertical-align: middle; 
+ position: relative; 
+ top: 4px;
+  margin-bottom: 10px;
+  width: auto; /* Adjust width as needed */
+  margin-right: 20px;
+}
+
+#s1 label {
+  font-size: 14px; /* Adjust font size */
+  color: #333; /* Adjust color */
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+fieldset{
+  border-color: #100f0f;
+}
+select {
+  width: calc(
+    100% - 92px
+  ); /* Définition de la largeur pour le champ de sélection  reviens ici*/
+}
+
+section {
+ 
+  width: 80%; /* Adjust width of the sections */
+  max-width: 600px; /* Optional: Set maximum width */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+}
+
+#email{
+  font-size: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+legend {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+
+#haut-de-page {
+  position:static;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+
+#navigation {
+  background-color: none;
+  float: left;
+  border:none;
+  margin: 5px;
+}
+#navigation {
+  background-color: #f2f2f2; /* Light gray background */
+  border: 1px solid #ccc; /* Gray border */
+  padding: 4px;
+}
+
+#navigation a {
+  color: black; /* Default color for all links */
+}
+
+
+
+/* Style pour chaque élément de la liste */
+#vacances li {
+  margin-bottom: 15px;
+  align-items: center;
+ 
+}
+
+
+/* Style pour les images miniatures */
+#vacances li img {
+  width: 40px; /* Taille de l'image miniature */
+  margin-right: 50px; /* Marge à droite de l'image */
+  margin-left: 50px; /* Marge à gauche de l'image */
+  align-items: center; /* Align items vertically (optional) */
+}
+
+
+a {
+  color: #00008b; /* Bleu Foncé */
+}
+/* Lien visité en rose */
+a:visited {
+  color: #1c0f3b; /* Rose */
+}
+/* Lien actif en jaune */
+a:hover {
+  color: rgb(8, 61, 5); /* Jaune */
+}
+#haut-de-page a {
+  color: gray;
+}
+
+
+
+
+
+/* Add animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+section {
+  animation: fadeIn 1s ease-in-out;
+}
