@@ -3,3 +3,4 @@
 # Tp1
 Ce repertoire contient les deux fichiers html et les index css qui conviennent
 ainsi que les images utilisées dans le projet.
+Visualisez le projet en cliquant sur: https://the-meli.github.io/Tp1/
